@@ -42,13 +42,14 @@
     }
 
     .caption {
+      margin-bottom: 10px;
       line-height: 1.5;
       padding: 10px;
       position: absolute;
       top: 0;
+      background-color: #f0f0f0;
+      border: 1px solid black;
       font-size: 14px;
-      width: 100%;
-      box-sizing: border-box;
     }
 
     .caption p {
@@ -62,19 +63,18 @@
 
     .column:nth-child(1) {
       background-color: #FFE4E1;
-      left: 0;
+      left: 0; /* Зліва */
     }
 
     .column:nth-child(2) {
       background-color: #ADD8E6;
-      right: 0;
+      right: 0; /* Справа */
     }
 
     .column:nth-child(3) {
       background-color: #FFD700;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
+      left: 0; /* Зліва, можна також вибрати right: 0; для вирівнювання праворуч */
+      margin: 0 auto; /* Центрування по горизонталі */
     }
 
     @media (max-width: 768px) {
@@ -121,4 +121,3 @@
   </div>
 </body>
 </html>
-
