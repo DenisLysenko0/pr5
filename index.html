@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Title Here</title>
   <style>
     body {
       margin: 0;
@@ -14,17 +15,16 @@
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
-    }
-
-    .column {
-      width: 8.33%; 
-      float: left;
-      margin-right: 20px; 
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       box-sizing: border-box;
     }
 
-    .clear {
-      clear: both;
+    .column {
+      width: calc(8.33% - 20px); 
+      margin-bottom: 20px; 
+      box-sizing: border-box;
     }
 
     .main-caption {
@@ -38,34 +38,39 @@
       margin-bottom: 10px;
       line-height: 1.5;
     }
+    @media (min-width: 1200px) {
+      .column {
+        width: calc(8.33% - 20px);
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .column {
+        width: calc(16.66% - 20px);
+      }
+    }
   </style>
 </head>
 <body>
-
-<div class="container">
-  <div class="column">
-    <div class="caption">
-      <p>Caption 1</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam magni maiores modi odit omnis.</p>
+  <h1 class="main-caption">Heading</h1>
+  <div class="container">
+    <div class="column">
+      <div class="caption">
+        <p>Caption 1</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam magni maiores modi odit omnis.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="caption">
+        <p>Caption 2</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam magni maiores modi odit omnis.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="caption">
+        <p>Caption 3</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam odit.</p>
+      </div>
     </div>
   </div>
-  
-  <div class="column">
-    <div class="caption">
-      <p>Caption 2</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam magni maiores modi odit omnis.</p>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="caption">
-      <p>Caption 3</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam odit.</p>
-    </div>
-  </div>
-
-  <div class="clear"></div>
-</div>
-
 </body>
 </html>
