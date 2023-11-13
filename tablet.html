@@ -16,20 +16,20 @@
 
     .container {
       width: 100%;
-      max-width: 600px; /* Обмеження ширини для центрування на екрані */
+      max-width: 1200px;
       box-sizing: border-box;
       padding: 20px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     .column {
-      width: 100%;
+      width: calc(33.33% - 20px);
       box-sizing: border-box;
       position: relative;
       background-color: #E1F3D8;
-      margin: 10px 0; /* Змінено відстань між таблицями */
+      margin: 10px 0;
       border: 1px solid black;
       overflow: hidden;
     }
@@ -63,18 +63,18 @@
 
     .column:nth-child(1) {
       background-color: #FFE4E1;
-      left: 0; /* Зліва */
+      left: 0;
     }
 
     .column:nth-child(2) {
       background-color: #ADD8E6;
-      right: 0; /* Справа */
+      right: 0;
     }
 
     .column:nth-child(3) {
       background-color: #FFD700;
-      left: 0; /* Зліва, можна також вибрати right: 0; для вирівнювання праворуч */
-      margin: 0 auto; /* Центрування по горизонталі */
+      left: 0;
+      margin: 0 auto;
     }
 
     @media (max-width: 768px) {
