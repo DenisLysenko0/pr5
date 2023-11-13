@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main caption</title>
   <style>
-    body {
+    body 
+    {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
     }
 
-    .container {
+    .container 
+    {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
@@ -21,7 +23,8 @@
       box-sizing: border-box;
     }
 
-    .column {
+    .column 
+    {
       width: calc(8.33% - 20px); 
       margin-bottom: 20px; 
       box-sizing: border-box;
@@ -31,48 +34,59 @@
       border: 1px solid black; 
     }
 
-    .main-caption {
+    .main-caption 
+    {
       text-align: center;
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
-    .caption {
+    .caption 
+    {
       margin-bottom: 10px;
       line-height: 1.5;
     }
 
-    .caption p {
+    .caption p 
+    {
       margin: 0; 
     }
 
-    .column:nth-child(1) {
+    .column:nth-child(1) 
+    {
       background-color: #FFE4E1; 
     }
 
-    .column:nth-child(2) {
+    .column:nth-child(2) 
+    {
       background-color: #ADD8E6; 
     }
 
-    .column:nth-child(3) {
+    .column:nth-child(3) 
+    {
       background-color: #FFD700; 
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1200px) 
+    {
       .column {
         width: calc(8.33% - 20px);
       }
     }
 
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .column {
+    @media (min-width: 992px) and (max-width: 1199px) 
+    {
+      .column 
+      {
         width: calc(16.66% - 20px);
       }
     }
 
-    @media (max-width: 768px) {
-      .column {
+    @media (max-width: 768px) 
+    {
+      .column 
+      {
         width: 100%;
       }
     }
