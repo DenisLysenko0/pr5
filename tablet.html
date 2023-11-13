@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main caption</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px; /* Обмеження ширини для центрування на екрані */
+      box-sizing: border-box;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .column {
+      width: 100%;
+      box-sizing: border-box;
+      position: relative;
+      background-color: #E1F3D8;
+      margin: 10px 0; /* Змінено відстань між таблицями */
+      border: 1px solid black;
+      overflow: hidden;
+    }
+
+    .main-caption {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .caption {
+      line-height: 1.5;
+      padding: 10px;
+      position: absolute;
+      top: 0;
+      font-size: 14px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .caption p {
+      margin: 0;
+    }
+
+    .caption-content {
+      padding: 20px;
+      padding-top: 40px;
+    }
+
+    .column:nth-child(1) {
+      background-color: #FFE4E1;
+      left: 0;
+    }
+
+    .column:nth-child(2) {
+      background-color: #ADD8E6;
+      right: 0;
+    }
+
+    .column:nth-child(3) {
+      background-color: #FFD700;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="main-caption">Main caption</h1>
+  <div class="container">
+
+    <div class="column">
+      <div class="caption">
+        <p>Caption 1</p>
+      </div>
+      <div class="caption-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam magni maiores modi odit omnis.</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="caption">
+        <p>Caption 2</p>
+      </div>
+      <div class="caption-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam magni maiores modi odit omnis.</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="caption">
+        <p>Caption 3</p>
+      </div>
+      <div class="caption-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam odit.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 
