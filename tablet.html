@@ -21,6 +21,8 @@
       padding: 20px;
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
     }
 
     .column {
@@ -28,7 +30,7 @@
       box-sizing: border-box;
       position: relative;
       background-color: #E1F3D8;
-      margin: 10px;
+      margin: 10px 0;
       border: 1px solid black;
       overflow: hidden;
     }
@@ -47,8 +49,6 @@
       background-color: #f0f0f0;
       border: 1px solid black;
       font-size: 14px;
-      position: absolute;
-      top: 0;
       width: 100%;
       box-sizing: border-box;
     }
@@ -59,29 +59,25 @@
 
     .caption-content {
       padding: 20px;
-      padding-top: 40px;
     }
 
     .column:nth-child(1) {
       background-color: #FFE4E1;
-      left: 0;
     }
 
     .column:nth-child(2) {
       background-color: #ADD8E6;
-      right: 0;
     }
 
     .column:nth-child(3) {
       background-color: #FFD700;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 150px; /* змініть відстань відгоризонтальної центрування */
+      margin: 0 auto;
     }
 
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
+        align-items: center;
       }
 
       .column {
