@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main caption</title>
+  <title>Your Title Here</title>
   <style>
     body {
       margin: 0;
@@ -25,6 +25,7 @@
       width: calc(8.33% - 20px); 
       margin-bottom: 20px; 
       box-sizing: border-box;
+      position: relative;
     }
 
     .main-caption {
@@ -48,11 +49,17 @@
         width: calc(16.66% - 20px);
       }
     }
+    @media (max-width: 768px) {
+      .column {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1 class="main-caption">Main caption</h1>
   <div class="container">
+    <h1 class="main-caption">Main caption</h1>
+
     <div class="column">
       <div class="caption">
         <p>Caption 1</p>
@@ -70,7 +77,6 @@
         <p>Caption 3</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam odit.</p>
       </div>
-    </div>
   </div>
 </body>
 </html>
