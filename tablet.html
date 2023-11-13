@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main caption</title>
   <style>
-    body {
+    body 
+    {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
@@ -14,19 +15,20 @@
       align-items: center;
     }
 
-    .container {
+    .container 
+    {
       width: 100%;
-      max-width: 1200px;
+      max-width: 600px;
       box-sizing: border-box;
       padding: 20px;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .column {
-      width: calc(33.33% - 20px);
+    .column 
+    {
+      width: 100%;
       box-sizing: border-box;
       position: relative;
       background-color: #E1F3D8;
@@ -35,52 +37,64 @@
       overflow: hidden;
     }
 
-    .main-caption {
+    .main-caption 
+    {
       text-align: center;
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
-    .caption {
+    .caption 
+    {
       margin-bottom: 10px;
       line-height: 1.5;
       padding: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
       background-color: #f0f0f0;
       border: 1px solid black;
       font-size: 14px;
-      width: 100%;
-      box-sizing: border-box;
     }
 
-    .caption p {
+    .caption p 
+    {
       margin: 0;
     }
 
-    .caption-content {
+    .caption-content 
+    {
       padding: 20px;
+      padding-top: 40px;
     }
 
-    .column:nth-child(1) {
+    .column:nth-child(1) 
+    {
       background-color: #FFE4E1;
     }
 
-    .column:nth-child(2) {
+    .column:nth-child(2) 
+    {
       background-color: #ADD8E6;
+      margin-left: calc(33.33% + 10px);
+      margin-right: 0;
     }
 
-    .column:nth-child(3) {
+    .column:nth-child(3) 
+    {
       background-color: #FFD700;
-      margin: 0 auto;
     }
 
-    @media (max-width: 768px) {
-      .container {
+    @media (max-width: 768px) 
+    {
+      .container 
+      {
         flex-direction: column;
-        align-items: center;
       }
 
-      .column {
+      .column
+      {
         width: 100%;
       }
     }
