@@ -26,6 +26,9 @@
       margin-bottom: 20px; 
       box-sizing: border-box;
       position: relative;
+      background-color: #E1F3D8; 
+      padding: 20px;
+      border: 1px solid black; 
     }
 
     .main-caption {
@@ -39,16 +42,35 @@
       margin-bottom: 10px;
       line-height: 1.5;
     }
+
+    .caption p {
+      margin: 0; 
+    }
+
+    .column:nth-child(1) {
+      background-color: #FFE4E1; 
+    }
+
+    .column:nth-child(2) {
+      background-color: #ADD8E6; 
+    }
+
+    .column:nth-child(3) {
+      background-color: #FFD700; 
+    }
+
     @media (min-width: 1200px) {
       .column {
         width: calc(8.33% - 20px);
       }
     }
+
     @media (min-width: 992px) and (max-width: 1199px) {
       .column {
         width: calc(16.66% - 20px);
       }
     }
+
     @media (max-width: 768px) {
       .column {
         width: 100%;
@@ -77,6 +99,7 @@
         <p>Caption 3</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis consequatur dolore doloremque ex hic in, ipsam ipsum itaque magnam odit.</p>
       </div>
+    </div>
   </div>
 </body>
 </html>
